@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+$Soft-blue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+$Very-dark-blue-main: hsl(217, 54%, 11%); //main
+$Very-dark-blue-card: hsl(216, 50%, 16%); //card
+$Very-dark-blue-line: hsl(215, 32%, 27%); //line
+$White: hsl(0, 0%, 100%);
+$Font: 'Outfit', sans-serif;
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 18px;
+    font-family: $Font;
+}
+body{
+    background: $Very-dark-blue-main;
+    main{
+        max-width: 85%;
+        margin: 5rem auto 0;
+        background: $Very-dark-blue-card;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        img{
+            max-width: 100%;
+            border-radius: 0.5rem;
+        }
+        .content{
+            margin-top: 1rem;
+            h1{
+                font-size: 1.4rem;
+                color: $White;
+                font-weight: 400;
+                margin-bottom: 0.5rem;
+            }
+            p{
+                font-size: 0.9rem;
+                color: $Soft-blue;
+                line-height: 1.5rem;
+            }
+            .price{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 0.6rem;
+                .left,
+                .right
+                {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.5rem;
+                    h3{
+                        font-size: 0.95rem;
+                    }
+                }
+                .left{
+                    h3{
+                        color: $Cyan;
+                        font-weight: 600;
+                    }
+                }
+                .right{
+                    h3{
+                        color: $Soft-blue;
+                    }
+                }
+            }
+            .profile{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                padding: 1rem 0;
+                border-top: 0.5px solid $Soft-blue;
+                margin-top: 1rem;
+                img{
+                    height: 2rem;
+                    border-radius: 50%;
+                    border: 1px solid $White;
+                }
+                h2{
+                    font-size: 1rem;
+                    color: $Soft-blue;
+                    span{
+                        color: $White;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 500px){
+    body{
+        main{
+            max-width: 20%;
+            .content{
+                h1{
+                    font-size: 1rem;
+                }
+                p{
+                    font-size: 0.7rem;
+                    line-height: 1.3rem;
+                }
+                .price{
+                    .left,
+                    .right{
+                        h3{
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+                .profile{
+                    h2{
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+        }
+    }
+}

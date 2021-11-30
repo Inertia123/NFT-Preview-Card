@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background: #0d192b;
+}
+
+body main {
+  max-width: 85%;
+  margin: 5rem auto 0;
+  background: #14253d;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+body main img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+body main .content {
+  margin-top: 1rem;
+}
+
+body main .content h1 {
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+body main .content p {
+  font-size: 0.9rem;
+  color: #8bacda;
+  line-height: 1.5rem;
+}
+
+body main .content .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0.6rem;
+}
+
+body main .content .price .left,
+body main .content .price .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+}
+
+body main .content .price .left h3,
+body main .content .price .right h3 {
+  font-size: 0.95rem;
+}
+
+body main .content .price .left h3 {
+  color: #00fff7;
+  font-weight: 600;
+}
+
+body main .content .price .right h3 {
+  color: #8bacda;
+}
+
+body main .content .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 0.5px solid #8bacda;
+  margin-top: 1rem;
+}
+
+body main .content .profile img {
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+body main .content .profile h2 {
+  font-size: 1rem;
+  color: #8bacda;
+}
+
+body main .content .profile h2 span {
+  color: white;
+}
+
+@media only screen and (min-width: 500px) {
+  body main {
+    max-width: 20%;
+  }
+  body main .content h1 {
+    font-size: 1rem;
+  }
+  body main .content p {
+    font-size: 0.7rem;
+    line-height: 1.3rem;
+  }
+  body main .content .price .left h3,
+  body main .content .price .right h3 {
+    font-size: 0.7rem;
+  }
+  body main .content .profile h2 {
+    font-size: 0.75rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
